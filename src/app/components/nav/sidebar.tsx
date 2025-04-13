@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useState } from "react";
 import { useRef } from "react";
 import {
@@ -130,7 +129,7 @@ const Sidebar = () => {
                 <Link
                   href="/dashboard/appointments"
                   className={`${
-                    pathname === "/dashboard/orders" && "text-primary"
+                    pathname === "/dashboard/appointments" && "text-primary"
                   } flex cursor-default items-center justify-start rounded-md bg-transparent p-3 font-medium outline-none duration-300 md:cursor-pointer`}
                 >
                   <Boxes size={23} className="min-w-max" />
@@ -139,16 +138,26 @@ const Sidebar = () => {
               </li>
               <li>
                 <Link
-                  href="/dashboard/appointments"
+                  href="/dashboard/calendar"
                   className={`${
-                    pathname === "/dashboard/revenue" && "text-primary"
+                    pathname === "/dashboard/calendar" && "text-primary"
+                  } flex cursor-default items-center justify-start rounded-md bg-transparent p-3 font-medium outline-none duration-300 md:cursor-pointer`}
+                >
+                  <Wallet size={23} className="min-w-max" />
+                  <p className="ml-5 flex-1 text-left capitalize">Calendar</p>
+                </Link>
+              </li>
+            <li>
+                <Link
+                  href="/dashboard/doctors"
+                  className={`${
+                    pathname === "/dashboard/doctors" && "text-primary"
                   } flex cursor-default items-center justify-start rounded-md bg-transparent p-3 font-medium outline-none duration-300 md:cursor-pointer`}
                 >
                   <Wallet size={23} className="min-w-max" />
                   <p className="ml-5 flex-1 text-left capitalize">Doctors</p>
                 </Link>
               </li>
-            
               <li>
                 <Link
                   href="/dashboard/offers"
