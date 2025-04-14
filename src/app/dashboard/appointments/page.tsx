@@ -4,6 +4,7 @@ import Navbar from "./../../components/nav/navbar";
 import Header from "./../../components/header/header";
 import { PlusIcon } from "lucide-react";
 import appointment from "./../../api/appointment.json";
+import NewAppointment from "./../../components/modals/add-appointment"
 import {
   Table,
   TableHeader,
@@ -22,8 +23,12 @@ import {
   Selection,
   SortDescriptor,
 } from "@nextui-org/react";
+import { useDisclosure } from "@nextui-org/react";
 
 const Appointments = () => {
+
+  const { isOpen, onOpen, onClose, onOpenChange } = useDisclosure();
+
   const columns = [
     {
       key: "name",
@@ -51,6 +56,7 @@ const Appointments = () => {
     },
   ];
 
+
   return (
     <>
       <Navbar>
@@ -58,11 +64,12 @@ const Appointments = () => {
         <div className="p-5 mt-5  lg:p-6">
           <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-end">
             <Button
+            onPress={onOpen}
               color="primary"
               size="md"
               endContent={<PlusIcon size={20} />}
             >
-              Add New Appointment
+              Schedule Appointment
             </Button>
           </div>
           <Table
@@ -80,11 +87,11 @@ const Appointments = () => {
             <TableBody>
               {appointment.map((item) => (
                 <TableRow key={item.id}>
+                  <TableCell>{item.id}</TableCell>
                   <TableCell>{item.name}</TableCell>
                   <TableCell>{item.speciality}</TableCell>
                   <TableCell>{item.doctor}</TableCell>
                   <TableCell>{item.date}</TableCell>
-                  <TableCell>{item.time}</TableCell>
                   <TableCell>{item.status}</TableCell>
                 </TableRow>
               ))}
@@ -92,6 +99,11 @@ const Appointments = () => {
           </Table>
         </div>
       </Navbar>
+      <NewAppointment 
+      isOpen={isOpen}
+      onOpenChange={onOpenChange}
+      onClose={onClose}
+       />
     </>
   );
 };

@@ -5,7 +5,6 @@
     "speciality": "Cardiologist",
     "doctor": "Dr. Smith",
     "date": "2023-10-01",
-    "time": "2023-10-01T10:00:00Z",
     "status": "Confirmed"
   },
   {
@@ -14,7 +13,6 @@
     "speciality": "Dermatologist",
     "doctor": "Dr. Brown",
     "date": "2023-10-02",
-    "time": "2023-10-02T11:00:00Z",
     "status": "Pending"
   },
   {
@@ -23,7 +21,6 @@
     "speciality": "Neurologist",
     "doctor": "Dr. Green",
     "date": "2023-10-03",
-    "time": "2023-10-03T12:00:00Z",
     "status": "Cancelled"
   },
   {
@@ -32,7 +29,6 @@
     "speciality": "Neurologist",
     "doctor": "Dr. Green",
     "date": "2023-10-03",
-    "time": "2023-10-03T12:00:00Z",
     "status": "Cancelled"
   },
   {
@@ -41,7 +37,6 @@
     "speciality": "Pediatrician",
     "doctor": "Dr. White",
     "date": "2023-10-04",
-    "time": "2023-10-04T13:00:00Z",
     "status": "Confirmed"
   },
   {
@@ -50,16 +45,14 @@
     "speciality": "Orthopedic",
     "doctor": "Dr. Black",
     "date": "2023-10-05",
-    "time": "2023-10-05T14:00:00Z",
     "status": "Pending"
   },
   {
     "id": 6,
     "name": "Charlie Davis",
-    "speciality": "Oncologist",
+    "speciality": "Orthopedic",
     "doctor": "Dr. Blue",
     "date": "2023-10-06",
-    "time": "2023-10-06T15:00:00Z",
     "status": "Cancelled"
   },
   {
@@ -68,7 +61,6 @@
     "speciality": "Gynecologist",
     "doctor": "Dr. Yellow",
     "date": "2023-10-07",
-    "time": "2023-10-07T16:00:00Z",
     "status": "Confirmed"
   },
   {
@@ -77,25 +69,22 @@
     "speciality": "Surgeon",
     "doctor": "Dr. Red",
     "date": "2023-10-08",
-    "time": "2023-10-08T17:00:00Z",
     "status": "Pending"
   },
   {
     "id": 9,
     "name": "Fiona Apple",
-    "speciality": "Psychiatrist",
+    "speciality": "Cardiologist",
     "doctor": "Dr. Green",
     "date": "2023-10-09",
-    "time": "2023-10-09T18:00:00Z",
     "status": "Cancelled"
   },
   {
     "id": 10,
     "name": "George Clooney",
-    "speciality": "Dentist",
+    "speciality": "Cardiologist",
     "doctor": "Dr. Orange",
     "date": "2023-10-10",
-    "time": "2023-10-10T19:00:00Z",
     "status": "Confirmed"
   }
 ]
