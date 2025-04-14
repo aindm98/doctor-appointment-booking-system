@@ -1,90 +1,28 @@
 [
   {
-    "id": 1,
-    "name": "Aindrila",
-    "speciality": "Cardiologist",
-    "doctor": "Dr. Smith",
-    "date": "2023-10-01",
-    "status": "Confirmed"
-  },
-  {
-    "id": 2,
-    "name": "John Doe",
-    "speciality": "Dermatologist",
-    "doctor": "Dr. Brown",
-    "date": "2023-10-02",
-    "status": "Pending"
-  },
-  {
-    "id": 3,
-    "name": "Jane Smith",
-    "speciality": "Neurologist",
-    "doctor": "Dr. Green",
-    "date": "2023-10-03",
-    "status": "Cancelled"
-  },
-  {
-    "id": 3,
-    "name": "Jane Smith",
-    "speciality": "Neurologist",
-    "doctor": "Dr. Green",
-    "date": "2023-10-03",
-    "status": "Cancelled"
-  },
-  {
-    "id": 4,
-    "name": "Alice Johnson",
-    "speciality": "Pediatrician",
-    "doctor": "Dr. White",
-    "date": "2023-10-04",
-    "status": "Confirmed"
-  },
-  {
-    "id": 5,
-    "name": "Bob Brown",
-    "speciality": "Orthopedic",
-    "doctor": "Dr. Black",
-    "date": "2023-10-05",
-    "status": "Pending"
-  },
-  {
-    "id": 6,
-    "name": "Charlie Davis",
-    "speciality": "Orthopedic",
-    "doctor": "Dr. Blue",
-    "date": "2023-10-06",
-    "status": "Cancelled"
-  },
-  {
-    "id": 7,
-    "name": "Diana Prince",
-    "speciality": "Gynecologist",
-    "doctor": "Dr. Yellow",
-    "date": "2023-10-07",
-    "status": "Confirmed"
-  },
-  {
-    "id": 8,
-    "name": "Ethan Hunt",
-    "speciality": "Surgeon",
-    "doctor": "Dr. Red",
-    "date": "2023-10-08",
-    "status": "Pending"
-  },
-  {
-    "id": 9,
-    "name": "Fiona Apple",
-    "speciality": "Cardiologist",
-    "doctor": "Dr. Green",
-    "date": "2023-10-09",
-    "status": "Cancelled"
-  },
-  {
-    "id": 10,
-    "name": "George Clooney",
-    "speciality": "Cardiologist",
-    "doctor": "Dr. Orange",
-    "date": "2023-10-10",
-    "status": "Confirmed"
-  }
+    "id": "1744617333112",
+    "title": "ahghgshgdhsdgshdgsah",
+    "start": "2025-04-17",
+    "end": "2025-04-26",
+    "doctor": "asdasdsad",
+    "speciality": "cardiology",
+    "time": "",
+    "allDay": true,
+    "extendedProps": {
+        "calendar": "Success"
+    }
+},
+{
+    "id": "1744617506969",
+    "title": "asdasda",
+    "start": "2025-04-30",
+    "end": "2025-05-03",
+    "doctor": "asds",
+    "speciality": "cardiology",
+    "time": "",
+    "allDay": true,
+    "extendedProps": {
+        "calendar": "Success"
+    }
+}
 ]

@@ -4,7 +4,7 @@ import Navbar from "./../../components/nav/navbar";
 import Header from "./../../components/header/header";
 import { PlusIcon } from "lucide-react";
 import appointment from "./../../api/appointment.json";
-import NewAppointment from "./../../components/modals/add-appointment"
+
 import {
   Table,
   TableHeader,
@@ -99,11 +99,11 @@ const Appointments = () => {
           </Table>
         </div>
       </Navbar>
-      <NewAppointment 
+      {/* <NewAppointment 
       isOpen={isOpen}
       onOpenChange={onOpenChange}
       onClose={onClose}
-       />
+       /> */}
     </>
   );
 };
