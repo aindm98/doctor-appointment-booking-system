@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import {AuthProvider}  from './services/providers/auth-provider';
+import "./globals.css";
 import { Toaster } from "sonner";
-import'./globals.css';
 
 
 export const metadata: Metadata = {
@@ -15,11 +14,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-       <body>
-        <AuthProvider>
+<html lang="en">
+       <body className="bg-background font-popins dark:bg-[#020817]">   
         {children}
-        </AuthProvider>
         <Toaster richColors position="top-right" />
        </body>
     </html>

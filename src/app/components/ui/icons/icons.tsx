@@ -37,7 +37,7 @@ import { FaRegCopy } from "react-icons/fa6";
 import { GiMedicines } from "react-icons/gi";
 import { MdAdminPanelSettings } from "react-icons/md";
 import { FaHospital } from "react-icons/fa";
-
+import { MdDelete } from "react-icons/md";
 export {
   FaHospital,
   FaArrowRightLong,
@@ -75,4 +75,5 @@ export {
   FaPhone,
   FaMapMarker,
   FcDepartment,
+  MdDelete,
 };

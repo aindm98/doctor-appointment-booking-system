@@ -1,10 +1,8 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import Navbar from "./../../components/nav/navbar";
-import Header from "./../../components/header/header";
-import { PlusIcon } from "lucide-react";
-import appointment from "./../../api/appointment.json";
-
+import Header from "./../../components/nav/header";
+import { MdDelete } from "./../../components/ui/icons/icons";
 import {
   Table,
   TableHeader,
@@ -12,21 +10,11 @@ import {
   TableBody,
   TableRow,
   TableCell,
-  Input,
   Button,
-  DropdownTrigger,
-  Dropdown,
-  DropdownMenu,
-  DropdownItem,
-  User,
-  Pagination,
-  Selection,
-  SortDescriptor,
 } from "@nextui-org/react";
 import { useDisclosure } from "@nextui-org/react";
 
 const Appointments = () => {
-
   const { isOpen, onOpen, onClose, onOpenChange } = useDisclosure();
 
   const columns = [
@@ -54,8 +42,59 @@ const Appointments = () => {
       key: "status",
       label: "STATUS",
     },
+    {
+      key: "action",
+      label: "ACTION",
+    },
   ];
 
+  const appointments = [
+    {
+      id: 1,
+      name: "John Doe",
+      speciality: "Cardiology",
+      doctor: "Dr. Smith",
+      date: "2023-10-01",
+      time: "10:00 AM",
+      status: "Confirmed",
+    },
+    {
+      id: 2,
+      name: "Jane Smith",
+      speciality: "Dermatology",
+      doctor: "Dr. Johnson",
+      date: "2023-10-02",
+      time: "11:00 AM",
+      status: "Pending",
+    },
+    {
+      id: 3,
+      name: "Alice Johnson",
+      speciality: "Pediatrics",
+      doctor: "Dr. Brown",
+      date: "2023-10-03",
+      time: "12:00 PM",
+      status: "Cancelled",
+    },
+    {
+      id: 4,
+      name: "Bob Williams",
+      speciality: "Orthopedics",
+      doctor: "Dr. Davis",
+      date: "2023-10-04",
+      time: "01:00 PM",
+      status: "Confirmed",
+    },
+    {
+      id: 5,
+      name: "Charlie Brown",
+      speciality: "Neurology",
+      doctor: "Dr. Wilson",
+      date: "2023-10-05",
+      time: "02:00 PM",
+      status: "Pending",
+    },
+  ];
 
   return (
     <>
@@ -64,10 +103,10 @@ const Appointments = () => {
         <div className="p-5 mt-5  lg:p-6">
           <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-end">
             <Button
-            onPress={onOpen}
+              onPress={onOpen}
               color="primary"
               size="md"
-              endContent={<PlusIcon size={20} />}
+              //   endContent={<PlusIcon size={20} />}
             >
               Schedule Appointment
             </Button>
@@ -85,7 +124,7 @@ const Appointments = () => {
               )}
             </TableHeader>
             <TableBody>
-              {appointment.map((item) => (
+              {appointments.map((item) => (
                 <TableRow key={item.id}>
                   <TableCell>{item.id}</TableCell>
                   <TableCell>{item.name}</TableCell>
@@ -93,17 +132,26 @@ const Appointments = () => {
                   <TableCell>{item.doctor}</TableCell>
                   <TableCell>{item.date}</TableCell>
                   <TableCell>{item.status}</TableCell>
+                  <TableCell>
+                    <div className="flex items-center gap-2">
+                      <Button
+                        onPress={onOpen}
+                        variant="light"
+                        radius="full"
+                        size="sm"
+                        color="danger"
+                        isIconOnly
+                      >
+                        <MdDelete size={20} />
+                      </Button>
+                    </div>
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>
           </Table>
         </div>
       </Navbar>
-      {/* <NewAppointment 
-      isOpen={isOpen}
-      onOpenChange={onOpenChange}
-      onClose={onClose}
-       /> */}
     </>
   );
 };
