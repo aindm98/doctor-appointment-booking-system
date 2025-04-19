@@ -19,7 +19,7 @@ import Navbar from "./../components/nav/navbar";
 // import DeviceOrigin from "@/components/dashboard/device-origin/device-origin";
 // import VisitDetails from "@/components/dashboard/visit-details/visit-details";
 
-export default async function Home() {
+export default  function Home() {
   return (
     <Navbar>
       <div className="@container">
