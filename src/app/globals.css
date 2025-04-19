@@ -35,8 +35,10 @@
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
+
     --button-primary:144, 26.32%, 96.27%;
-    --button-border:144, 26.32%, 96.27%;
+    --button-border: 144, 26.32%, 96.27%;
+
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
@@ -82,6 +84,8 @@
   body {
     @apply bg-background text-foreground;
   }
+  
+ 
 }
 
 * {
@@ -110,3 +114,14 @@
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
+
+/* Calender */
+
+.fc {
+  padding: 1.25rem ;
+  boader-color: var(--border);
+}
+
+
+

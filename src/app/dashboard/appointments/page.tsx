@@ -103,8 +103,8 @@ const Appointments = () => {
         <div className="p-5 mt-5  lg:p-6">
           <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-end">
             <Button
-              onPress={onOpen}
-              color="primary"
+              // onPress={onOpen}
+             className="bg-button-primary text-white "
               size="md"
               //   endContent={<PlusIcon size={20} />}
             >

@@ -1,46 +1,19 @@
-'use client'
+'use client";'
+import React from "react";
 import Navbar from "./../components/nav/navbar";
-// import SummaryCard from "@/components/dashboard/summary/summary-card";
-// import RevenueOverview from "@/components/dashboard/revenue/revenue-overview";
-// import TopCustomers from "@/components/dashboard/top-customers";
-// import {
-//   cardDetails,
-//   newCustomerRegisters,
-//   revenueData,
-//   topCustomersData,
-// } from "@/lib/data";
-// import RecentOrders from "@/components/dashboard/tables/recent-orders";
-// import TopSellingProducts from "@/components/dashboard/tables/top-selling-products";
-// import TopStateBySales from "@/components/dashboard/top-state-by-sales";
-// import RecentActivities from "@/components/dashboard/recent-activities";
-// import NewCustomerRegistrations from "@/components/dashboard/customer-registrations/new-customer-registrations";
-// import TopSources from "@/components/dashboard/top-sources";
-// import TopPages from "@/components/dashboard/top-pages";
-// import DeviceOrigin from "@/components/dashboard/device-origin/device-origin";
-// import VisitDetails from "@/components/dashboard/visit-details/visit-details";
+import Calendar from "./../components/calendar/calendar";
 
-export default  function Home() {
-  return (
+const Dashboard = () => {
+  return(
+    <>
     <Navbar>
-      <div className="@container">
-        <div className="grid grid-cols-1 gap-3 @md:grid-cols-2 @4xl:grid-cols-4">
-          sdfdsfdsf
-        </div>
-        
-        <div className="my-10 grid grid-cols-1 px-3 @3xl:grid-cols-5 md:gap-3">
-         sdvdsfdsfsdfdsfds
-        </div>
-     fdsfdsfdsf
-        <div className="my-10 grid grid-cols-1 px-3 @3xl:grid-cols-3 md:gap-3">
-          dsfdsfdsf
-        </div>
-        <div className="my-10 grid grid-cols-1 px-3 @3xl:grid-cols-2 md:gap-3">
-          sdfdsfdsf
-        </div>
-        <div className="my-10 grid grid-cols-1 px-3 @3xl:grid-cols-2 md:gap-3">
-          sdfdsfdsf
-        </div>
+      <div className="relative flex h-screen max-h-screen w-full flex-col gap-4 px-4 pt-4 items-center justify-center">
+      <div className="relative h-full w-full overflow-hidden rounded-lg border bg-content1  shadow-md dark:bg-[#020817]">
+      <Calendar />
+      </div>
       </div>
     </Navbar>
+    </>
   );
-}
+};
+export default Dashboard;

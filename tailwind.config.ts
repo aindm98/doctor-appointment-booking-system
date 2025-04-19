@@ -1,4 +1,4 @@
-import { nextui } from "@nextui-org/react";
+import { button, nextui } from "@nextui-org/react";
 import containerPlugin from "@tailwindcss/container-queries";
 
 /** @type {import('tailwindcss').Config} */
@@ -10,6 +10,7 @@ module.exports = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./app/src/**/*.{css}",
   ],
   theme: {
     container: {
@@ -31,6 +32,11 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        
+        button: {
+          DEFAULT: "hsl(var(--button-primary))",
+        },
+        
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
